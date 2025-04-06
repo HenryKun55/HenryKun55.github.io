@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Github, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -16,7 +15,8 @@ export default function ProjectCard({ title, description, tags, imageUrl, github
   return (
     <Card className="overflow-hidden h-full flex flex-col">
       <div className="relative h-48 w-full">
-        <Image src={imageUrl || "/placeholder.svg"} alt={title} fill className="object-cover" />
+        {/* Substituindo o Image component por uma img regular */}
+        <img src={imageUrl || "./placeholder.svg"} alt={title} className="object-cover w-full h-full" />
       </div>
       <CardHeader>
         <CardTitle>{title}</CardTitle>
