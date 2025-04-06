@@ -32,7 +32,7 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  assetPrefix: './',
+  assetPrefix: '/',
 }
 
 if (userConfig) {
